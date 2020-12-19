@@ -4,7 +4,7 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = () => {
   
-  return;
+  return (<h1>test</h1>);
 }
 
 export default Timeline;
