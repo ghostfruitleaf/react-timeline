@@ -3,10 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
-import TimelineEvent  from './components/TimelineEvent';
-
-const timelineEvents = timelineData.events;
-const firstEvent = timelineEvents[0]
 
 function App() {
   console.log(timelineData);
@@ -18,7 +14,7 @@ function App() {
         <h1 className="App-title">your timeline</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent person = {firstEvent.person} status = {firstEvent.status} timeStamp ={firstEvent.timeStamp} />
+        <Timeline events = {timelineData.events}/>
       </main>
     </div>
   );
